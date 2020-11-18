@@ -269,6 +269,7 @@ func (cp *ConsulProxy) Canonicalize() {
 // ConsulUpstream represents a Consul Connect upstream jobspec stanza.
 type ConsulUpstream struct {
 	DestinationName string `mapstructure:"destination_name" hcl:"destination_name,optional"`
+	DestinationNamespace string `mapstructure:"destination_namespace" hcl:"destination_namespace,optional"`
 	LocalBindPort   int    `mapstructure:"local_bind_port" hcl:"local_bind_port,optional"`
 }
 

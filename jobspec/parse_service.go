@@ -803,6 +803,7 @@ func parseExposePath(epo *ast.ObjectItem) (*api.ConsulExposePath, error) {
 func parseUpstream(uo *ast.ObjectItem) (*api.ConsulUpstream, error) {
 	valid := []string{
 		"destination_name",
+		"destination_namespace",
 		"local_bind_port",
 	}
 
