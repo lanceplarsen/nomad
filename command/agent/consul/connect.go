@@ -164,6 +164,7 @@ func connectUpstreams(in []structs.ConsulUpstream) []api.Upstream {
 	for i, upstream := range in {
 		upstreams[i] = api.Upstream{
 			DestinationName: upstream.DestinationName,
+			DestinationNamespace: upstream.DestinationNamespace,
 			LocalBindPort:   upstream.LocalBindPort,
 		}
 	}

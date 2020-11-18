@@ -1121,6 +1121,7 @@ func (p *ConsulProxy) Equals(o *ConsulProxy) bool {
 type ConsulUpstream struct {
 	// DestinationName is the name of the upstream service.
 	DestinationName string
+	DestinationNamespace string
 
 	// LocalBindPort is the port the proxy will receive connections for the
 	// upstream on.
